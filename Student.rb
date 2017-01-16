@@ -4,10 +4,12 @@ class Student
     @name = student_name
     @cohort = cohort
   end
+  
   def talk
     return "I can talk!"
     
   end
+
   def say_favourite_language(language)
     return "I love #{language}"
   end

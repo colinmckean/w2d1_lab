@@ -4,7 +4,7 @@ require_relative '../Team.rb'
 
 class TestTeam < MiniTest::Test
   def setup
-    @ateam = Team.new()
+    @ateam = Team.new("Colin's 3 man team", ["Player A", "Player B", "Player C"], "Colin" )
   end
 
   def test_get_team_name
