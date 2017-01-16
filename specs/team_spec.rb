@@ -32,11 +32,12 @@ class TestTeam < MiniTest::Test
   end
 
   def test_points_starts_at_zero
-    assert_equal(0, @ateam.get_points)
+    assert_equal(0, @ateam.points)
   end
   def test_updates_points_for_win
     assert_equal(1, @ateam.game_result("win"))
     assert_equal(2, @ateam.game_result("win"))
     assert_equal(2, @ateam.game_result("loss"))
+    assert_equal(2, @ateam.points)
   end
 end

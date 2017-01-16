@@ -1,6 +1,6 @@
 class Team
   attr_accessor :coach
-  attr_reader :team_name, :players
+  attr_reader :team_name, :players, :points
   # Add a points property into your class that starts at 0.
 
 
@@ -42,9 +42,6 @@ class Team
     end
   end
 
-  def get_points
-    return @points
-  end
   def game_result(win_loss)
     if win_loss == "win"
       return @points+=1
