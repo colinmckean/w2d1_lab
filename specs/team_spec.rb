@@ -8,18 +8,18 @@ class TestTeam < MiniTest::Test
   end
 
   def test_get_team_name
-    assert_equal("Colin's 3 man team", @ateam.get_team_name())
+    assert_equal("Colin's 3 man team", @ateam.team_name())
   end
 
   def test_get_players
-    assert_equal(["Player A", "Player B", "Player C"],@ateam.get_players())
+    assert_equal(["Player A", "Player B", "Player C"],@ateam.players())
   end
   def test_get_coach
-    assert_equal("Colin", @ateam.get_coach)
+    assert_equal("Colin", @ateam.coach)
   end
 
   def test_set_coach
-    assert_equal("Colin's Evil Twin", @ateam.set_coach("Colin's Evil Twin"))
+    assert_equal("Colin's Evil Twin", @ateam.coach=("Colin's Evil Twin"))
     
   end
 
